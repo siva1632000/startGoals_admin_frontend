@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ChevronsLeft, Moon, Search, Sun } from "lucide-react";
+import { Bell, ChevronsLeft, Moon, Search, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import profile from "@/assets/profile.png";
 
 const Header = ({ collapsed, setCollapsed }) => {
     const { theme, setTheme } = useTheme();
@@ -34,6 +35,7 @@ const Header = ({ collapsed, setCollapsed }) => {
                 <button
                     className="btn-ghost size-10"
                     onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                    type="button"
                 >
                     <Sun
                         size={20}
@@ -43,6 +45,23 @@ const Header = ({ collapsed, setCollapsed }) => {
                     <Moon
                         size={20}
                         className="hidden dark:block"
+                    />
+                </button>
+                <button
+                    className="btn-ghost size-10"
+                    type="button"
+                >
+                    <Bell size={20} />
+                </button>
+
+                <button
+                    type="button"
+                    className="size-10 overflow-hidden rounded-full"
+                >
+                    <img
+                        src={profile}
+                        alt="profile"
+                        className="size-full object-cover"
                     />
                 </button>
             </div>
