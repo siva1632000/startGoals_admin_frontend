@@ -1,4 +1,17 @@
-import { ChartColumn, Home, NotepadText, Package, PackagePlus, Settings, ShoppingBag, UserCheck, UserPlus, Users } from "lucide-react";
+import {
+    ChartColumn,
+    Home,
+    ListVideo,
+    NotepadText,
+    Package,
+    PackagePlus,
+    Settings,
+    ShoppingBag,
+    UserCheck,
+    UserPlus,
+    Users,
+    VideoIcon,
+} from "lucide-react";
 
 import ProfileImage from "@/assets/profile.png";
 // import ProductImage from "@/assets/product-image.jpg";
@@ -33,9 +46,14 @@ export const navbarLinks = [
                 path: "/products",
             },
             {
-                label: "New Course",
+                label: "Join Course",
                 icon: PackagePlus,
-                path: "/new-product",
+                path: "/join-stream",
+            },
+            {
+                label: "Live Course",
+                icon: VideoIcon,
+                path: "/live-stream",
             },
         ],
     },
