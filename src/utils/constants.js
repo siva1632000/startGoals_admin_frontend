@@ -1,17 +1,4 @@
-import {
-    ChartColumn,
-    Home,
-    ListVideo,
-    NotepadText,
-    Package,
-    PackagePlus,
-    Settings,
-    ShoppingBag,
-    UserCheck,
-    UserPlus,
-    Users,
-    VideoIcon,
-} from "lucide-react";
+import { ChartColumn, FileVideo, Folder, FolderPlus, Home, ListVideo, NotepadText, Package, PackagePlus, Settings, ShoppingBag, TvMinimalPlay, UserCheck, UserPlus, Users } from "lucide-react";
 
 import ProfileImage from "@/assets/profile.png";
 // import ProductImage from "@/assets/product-image.jpg";
@@ -36,23 +23,22 @@ export const navbarLinks = [
                 path: "/reports",
             },
         ],
-    },
-    {
+    }, {
         title: "Course",
         links: [
             {
-                label: "All Courses",
-                icon: Package,
+                label: "Courses",
+                icon: Folder,
                 path: "/products",
             },
             {
-                label: "Join Course",
-                icon: PackagePlus,
-                path: "/join-stream",
+                label: "Add Course",
+                icon: FolderPlus,
+                path: "/new-product",
             },
             {
                 label: "Live Course",
-                icon: VideoIcon,
+                icon: TvMinimalPlay,
                 path: "/live-stream",
             },
         ],
@@ -66,12 +52,12 @@ export const navbarLinks = [
                 path: "/customers",
             },
             {
-                label: "New User",
+                label: "Add User",
                 icon: UserPlus,
                 path: "/new-customer",
             },
             {
-                label: "Verified Users",
+                label: "Prime User",
                 icon: UserCheck,
                 path: "/verified-customers",
             },

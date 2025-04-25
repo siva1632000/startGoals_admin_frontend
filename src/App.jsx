@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/contexts/theme-context";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "@/pages/Layout";
 import Dashboard from "@/pages/Dashboard";
-import ClassRoom from "./live-stream/ClassRoom";
+import Classroom from "./live-stream/Classroom";
 
 const App = () => {
     const router = createBrowserRouter([
@@ -21,23 +21,11 @@ const App = () => {
                 },
                 {
                     path: "join-stream",
-                    element: <ClassRoom role="audience" />,
+                    element: <Classroom />,
                 },
                 {
                     path: "live-stream",
-                    element: <ClassRoom role="host" />,
-                },
-                {
-                    path: "analytics",
-                    element: <h1 className="title">Analytics</h1>,
-                },
-                {
-                    path: "analytics",
-                    element: <h1 className="title">Analytics</h1>,
-                },
-                {
-                    path: "analytics",
-                    element: <h1 className="title">Analytics</h1>,
+                    element: <Classroom />,
                 },
             ],
         },

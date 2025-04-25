@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
-    "agora-rtc-sdk-ng": "^4.23.2",
+    "agora-rtc-sdk-ng": "^4.22.0",
+    "agora-rtm-sdk": "^2.2.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.503.0",
     "prop-types": "^15.8.1",
